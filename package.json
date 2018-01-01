@@ -3,6 +3,7 @@
   "version": "0.8.5",
   "description": "A NodeJS Discord library",
   "main": "./index.js",
+  "typings": "./index.d.ts",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -42,5 +43,8 @@
     "tls": false,
     "tweetnacl": false,
     "ws": false
+  },
+  "devDependencies": {
+    "@types/node": "^8.5.2"
   }
 }
