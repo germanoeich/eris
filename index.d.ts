@@ -1,4 +1,4 @@
-declare module "eris" {
+declare module "@dyno.gg/eris" {
   // TODO good hacktoberfest PR: implement ShardManager, RequestHandler and other stuff
   import { EventEmitter } from "events";
   import { Readable as ReadableStream } from "stream";
@@ -1262,6 +1262,7 @@ declare module "eris" {
     public embeds: Embed[];
     public reactions: { [s: string]: any, count: number, me: boolean };
     public prefix?: string;
+    public pinned?: boolean;
     public command?: Command;
     public constructor(data: BaseData, client: Client);
     public edit(content: MessageContent): Promise<Message>;
